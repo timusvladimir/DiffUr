@@ -44,10 +44,12 @@ if disk >= 0:
         ax.grid(which='major', linewidth=1.2)
         ax.grid(which='minor', linestyle='--', color='gray', linewidth=0.5)
 
-        ax.plot(x_list, label='')
-        ax.plot(y_list, label='')
+        ax.plot(x_list, label='x(t)')
+        ax.plot(y_list, label='y(t)')
 
-       # ax.legend()
+        ax.plot(x_list, y_list, label='не правильный график? x(y)')
+
+        ax.legend()
 
         ax.xaxis.set_minor_locator(AutoMinorLocator())
         ax.yaxis.set_minor_locator(AutoMinorLocator())
