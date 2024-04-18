@@ -23,7 +23,7 @@ if disk >= 0:
 
         xi1 = (gamma1 - variableA) / variableB
         xi2 = (gamma2 - variableA) / variableB
-        print (gamma1, gamma2, xi1, xi2)
+        print(gamma1, gamma2, xi1, xi2)
 
         h = 0.001
         tBegin = 0
@@ -39,8 +39,8 @@ if disk >= 0:
 
         fig, ax = plt.subplots(figsize=(8, 6))
         ax.set_title('Графики зависимостей:', fontsize=16)
-        ax.set_xlabel('x', fontsize=14)
-        ax.set_ylabel('y', fontsize=14)
+        ax.set_xlabel('t', fontsize=14)
+        ax.set_ylabel('', fontsize=14)
         ax.grid(which='major', linewidth=1.2)
         ax.grid(which='minor', linestyle='--', color='gray', linewidth=0.5)
 
